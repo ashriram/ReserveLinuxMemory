@@ -1,6 +1,10 @@
 # ReserveLinuxMemory
 Reserve memory in linux at boot time and then map it to user level program.
 
+# Dependencies
+* Linux Kernel 4.0+
+* CONFIG_STRICT_DEVMEM=n (if on x86: CONFIG_x86_PAT=n)
+
 # Getting Started 
 * Reserve memory at boot time in the kernel. Pass mem=2G memmap=30M\$2G.  mem= sets the kernel to run only within 2G and memmap= requests the kernel to reserve 30M starting at 2G
 
