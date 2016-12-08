@@ -42,3 +42,7 @@ mmaping the RAW_DATA_SIZE has to match the parameter set at boot time.
 open("/sys/kernel/debug/mmap_example", O_RDWR);
  address = (unsigned char*) mmap(NULL, RAW_DATA_SIZE, PROT_READ|PROT_WRITE, MAP_PRIVATE, configfd, 0);
 ```
+
+# Thanks
+The code here was derived from this example on stackoverflow.
+http://stackoverflow.com/questions/37919223/map-reserver-memory-at-boot-to-user-space-using-remap-pfn-range
