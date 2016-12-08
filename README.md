@@ -40,6 +40,5 @@ mmaping the RAW_DATA_SIZE has to match the parameter set at boot time.
 ``` C
 #define RAW_DATA_SIZE 31457280
 open("/sys/kernel/debug/mmap_example", O_RDWR);
- address = (unsigned char*) mmap(NULL, RAW_DATA_SIZE,
- PROT_READ|PROT_WRITE, MAP_PRIVATE, configfd, 0);
+ address = (unsigned char*) mmap(NULL, RAW_DATA_SIZE, PROT_READ|PROT_WRITE, MAP_PRIVATE, configfd, 0);
 ```
